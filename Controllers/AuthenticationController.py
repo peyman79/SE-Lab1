@@ -24,4 +24,5 @@ class Authenticator:
         return "successfully registered!"
 
     def logout(self):
-        pass
+        self.currentUser = None
+        return "logged out!"
