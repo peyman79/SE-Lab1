@@ -2,11 +2,11 @@ class Professor:
     courses = []
 
     def __init__(self, id, name):
-        id = id
-        name = name
+        self.id = id
+        self.name = name
 
     def __str__(self):
-        pass
+        return f"id: {self.id}\nname: {self.name}"
 
     def showAllCourses(self):
         pass
