@@ -1,3 +1,4 @@
+from Models.Professor import Professor
 from Models.Student import Student
 
 
@@ -15,6 +16,11 @@ class Authenticator:
     def studentRegister(self, id, name):
         self.currentUser = Student(id, name)
         self.allStudents.append(self.currentUser)
+        return "successfully registered!"
+
+    def professorRegister(self, id, name):
+        self.currentUser = Professor(id, name)
+        self.allProfessors.append(self.currentUser)
         return "successfully registered!"
 
     def logout(self):
