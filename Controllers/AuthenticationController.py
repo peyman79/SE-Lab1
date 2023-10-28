@@ -15,7 +15,11 @@ class Authenticator:
         return "there is no student with this id!"
 
     def professorLogin(self, id):
-        pass
+        for prof in self.allProfessors:
+            if prof.id == id:
+                self.currentUser = prof
+                return "logged in successfully!"
+        return "there is no professor with this id!"
 
     def studentRegister(self, id, name):
         self.currentUser = Student(id, name)
