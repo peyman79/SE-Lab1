@@ -7,7 +7,7 @@ class MainMenu:
         authenticator = Authenticator()
         print("Welcome to our course selection program!")
         while True:
-            command = input("Enter a command:\n1.register student\n2.register professor\n3.logout\n")
+            command = input("Enter a command:\n1.register student\n2.register professor\n3.logout\n4.login student\n")
             if command == "register student":
                 id = input("id: ")
                 name = input("name: ")
@@ -20,6 +20,10 @@ class MainMenu:
                 print(response)
             elif command == "logout":
                 response = authenticator.logout()
+                print(response)
+            elif command == "login student":
+                id = input("id: ")
+                response = authenticator.studentLogin(id)
                 print(response)
             elif command == "exit":
                 print("Goodbye!")

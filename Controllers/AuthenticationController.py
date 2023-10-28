@@ -8,7 +8,11 @@ class Authenticator:
     allProfessors = []
 
     def studentLogin(self, id):
-        pass
+        for student in self.allStudents:
+            if student.id == id:
+                self.currentUser = student
+                return "logged in successfully!"
+        return "there is no student with this id!"
 
     def professorLogin(self, id):
         pass
