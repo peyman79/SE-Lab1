@@ -34,3 +34,6 @@ class Authenticator:
     def logout(self):
         self.currentUser = None
         return "logged out!"
+
+    def showUserInfo(self):
+        return str(self.currentUser)

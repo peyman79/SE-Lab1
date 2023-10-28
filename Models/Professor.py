@@ -6,7 +6,7 @@ class Professor:
         self.name = name
 
     def __str__(self):
-        pass
+        return f"id: {self.id}\nname: {self.name}"
 
     def showAllCourses(self):
         pass
