@@ -1,4 +1,5 @@
 from Controllers.AuthenticationController import Authenticator
+from Views.ProfessorMenu import ProfessorMenu
 from Views.StudentMenu import StudentMenu
 
 
@@ -22,6 +23,7 @@ class MainMenu:
                 name = input("name: ")
                 response = authenticator.professorRegister(id, name)
                 print(response)
+                ProfessorMenu(authenticator).run()
             elif command == "login student":
                 id = input("id: ")
                 response = authenticator.studentLogin(id)
@@ -31,6 +33,7 @@ class MainMenu:
                 id = input("id: ")
                 response = authenticator.professorLogin(id)
                 print(response)
+                ProfessorMenu(authenticator).run()
             elif command == "exit":
                 print("Goodbye!")
                 break

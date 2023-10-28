@@ -1,4 +1,4 @@
-class StudentMenu:
+class ProfessorMenu:
     def __init__(self, authenticator):
         self.authenticator = authenticator
 
