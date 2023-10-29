@@ -20,8 +20,12 @@ class CourseController:
             if student.hasCourse(course):
                 return "you already have this course!"
             else:
-                student.courses.append(course)
-                return "you picked course successfully!"
+                if course.hasCapacity():
+                    student.courses.append(course)
+                    course.picked += 1
+                    return "you picked course successfully!"
+                else: 
+                    return "this course capacity is full!"
 
     def showAllCourses(self):
         return CourseController.showCourses(self.allCourses)

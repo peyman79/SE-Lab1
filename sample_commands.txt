@@ -6,7 +6,7 @@ new course
 ds
 3
 10-12
-5
+1
 all courses
 new course
 2
