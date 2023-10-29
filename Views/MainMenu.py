@@ -19,7 +19,7 @@ class MainMenu:
                 name = input("name: ")
                 response = authenticator.studentRegister(id, name)
                 print(response)
-                StudentMenu(authenticator).run()
+                StudentMenu(authenticator, courseController).run()
             elif command == "register professor":
                 id = input("id: ")
                 name = input("name: ")
@@ -30,7 +30,7 @@ class MainMenu:
                 id = input("id: ")
                 response = authenticator.studentLogin(id)
                 print(response)
-                StudentMenu().run()
+                StudentMenu(authenticator, courseController).run()
             elif command == "login professor":
                 id = input("id: ")
                 response = authenticator.professorLogin(id)
