@@ -17,8 +17,9 @@ class ProfessorMenu:
                 title = input("title: ")
                 credit = int(input("credit: "))
                 time = input("time (e.g. 13:30-15): ")
+                capacity = int(input("capacity: "))
                 prof = self.authenticator.currentUser
-                response = self.courseController.addCourse(code, title, credit, time, prof)
+                response = self.courseController.addCourse(code, title, credit, time, capacity, prof)
                 print(response)
             elif command == "all courses": 
                 response = self.courseController.showAllCourses()

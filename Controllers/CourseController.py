@@ -5,9 +5,9 @@ class CourseController:
 
     # TODO : add capacity for courses 
 
-    def addCourse(self,code, title, credit, time, prof):
+    def addCourse(self,code, title, credit, time, capacity, prof):
         # TODO : prevent duplicate course code 
-        course = Course(code, title, credit, prof, time)
+        course = Course(code, title, credit, prof, time, capacity)
         self.allCourses.append(course)
         prof.courses.append(course)
         return "course created successfully!"
