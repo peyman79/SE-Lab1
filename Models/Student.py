@@ -9,7 +9,7 @@ class Student:
         return f"id: {self.id}\nname: {self.name}"
 
     def showAllCourses(self):
-        result = f"courses count: {len(self.courses)} \n"
+        result = f"courses count: {len(self.courses)}\nyour total credit: {self.getTotalCredit()} \n"
         result += "\n==================\n"
         for course in self.courses: 
             result += str(course)
@@ -21,3 +21,9 @@ class Student:
             if c.code == course.code: 
                 return True 
         return False
+    
+    def getTotalCredit(self):
+        ans = 0
+        for course in self.courses: 
+            ans += course.credit
+        return ans

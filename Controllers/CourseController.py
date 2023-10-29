@@ -3,7 +3,6 @@ from Models.Course import Course
 class CourseController:
     allCourses = []
 
-    # TODO : add capacity for courses 
 
     def addCourse(self,code, title, credit, time, capacity, prof):
         # TODO : prevent duplicate course code 
@@ -23,7 +22,7 @@ class CourseController:
                 if course.hasCapacity():
                     student.courses.append(course)
                     course.picked += 1
-                    return "you picked course successfully!"
+                    return f"you picked course successfully!\nyour total credit: {student.getTotalCredit()}"
                 else: 
                     return "this course capacity is full!"
     def dropCourse(self, courseCode, student):
@@ -34,7 +33,7 @@ class CourseController:
             if student.hasCourse(course):
                 student.courses.remove(course)
                 course.picked -= 1
-                return "course dropped successfully!"
+                return f"course dropped successfully!\nyour total credit: {student.getTotalCredit()}"
             else:
                 return "you don't have this course!"
 
