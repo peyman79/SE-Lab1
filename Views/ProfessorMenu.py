@@ -8,7 +8,7 @@ class ProfessorMenu:
         print(f"Welcome {self.authenticator.currentUser.name}")
         while True:
             command = input(
-                "Enter a command:\n1.show my info\n2.logout\n3.new course\n4.all courses \n")
+                "Enter a command:\n1.show my info\n2.logout\n3.new course\n4.all courses\n5.my courses \n")
             if command == "show my info":
                 response = self.authenticator.showUserInfo()
                 print(response)
@@ -17,10 +17,15 @@ class ProfessorMenu:
                 title = input("title: ")
                 credit = int(input("credit: "))
                 time = input("time (e.g. 13:30-15): ")
-                response = self.courseController.addCourse(code, title, credit, time, self.authenticator.currentUser)
+                prof = self.authenticator.currentUser
+                response = self.courseController.addCourse(code, title, credit, time, prof)
                 print(response)
             elif command == "all courses": 
                 response = self.courseController.showAllCourses()
+                print(response)
+            elif command == "my courses": 
+                prof = self.authenticator.currentUser
+                response = prof.showAllCourses()
                 print(response)
             elif command == "logout":
                 response = self.authenticator.logout()

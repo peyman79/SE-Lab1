@@ -1,9 +1,9 @@
 class Student:
-    courses = []
 
     def __init__(self, id, name):
         self.id = id
         self.name = name
+        self.courses = []
 
     def __str__(self):
         return f"id: {self.id}\nname: {self.name}"
