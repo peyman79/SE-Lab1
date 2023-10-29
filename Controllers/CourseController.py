@@ -59,6 +59,15 @@ class CourseController:
             if course.professor.id == profId:
                 profCourses.append(course)
         return CourseController.showCourses(profCourses)
+    
+    def editCourseTime(self, courseCode, newTime):
+        course = self.findCourseByCode(courseCode)
+        if course == None: 
+            return "no course with given id!"
+        else:
+            course.time = newTime
+            return "course time edited successfulley!"
+
 
     def showCourses(courses):
         result = f"courses count: {len(courses)} \n"
