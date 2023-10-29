@@ -7,4 +7,5 @@ class Course:
         self.time = time
 
     def __str__(self):
-        pass
+        return f"code: {self.code}\ntitle: {self.title}\ncredit: {self.credit}\nprofessor: {self.professor.name}\ntime: {self.time}"
+
