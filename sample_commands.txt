@@ -22,3 +22,5 @@ stu
 pick course
 1
 my courses
+show prof courses
+1

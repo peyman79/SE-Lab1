@@ -24,18 +24,28 @@ class CourseController:
                 return "you picked course successfully!"
 
     def showAllCourses(self):
-        result = f"courses count: {len(self.allCourses)} \n"
-        result += "\n==================\n"
-        for course in self.allCourses: 
-            result += str(course)
-            result += "\n==================\n"
-        return result
+        return CourseController.showCourses(self.allCourses)
     
     def findCourseByCode(self, courseCode):
         for course in self.allCourses: 
             if course.code == courseCode:
                 return course 
         return None
+    
+    def showProfCourses(self, profId):
+        profCourses = []
+        for course in self.allCourses: 
+            if course.professor.id == profId:
+                profCourses.append(course)
+        return CourseController.showCourses(profCourses)
+
+    def showCourses(courses):
+        result = f"courses count: {len(courses)} \n"
+        result += "\n==================\n"
+        for course in courses: 
+            result += str(course)
+            result += "\n==================\n"
+        return result
 
 
 
