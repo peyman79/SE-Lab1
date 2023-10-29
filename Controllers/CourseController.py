@@ -3,7 +3,10 @@ from Models.Course import Course
 class CourseController:
     allCourses = []
 
+    # TODO : add capacity for courses 
+
     def addCourse(self,code, title, credit, time, prof):
+        # TODO : prevent duplicate course code 
         course = Course(code, title, credit, prof, time)
         self.allCourses.append(course)
         prof.courses.append(course)
@@ -13,9 +16,12 @@ class CourseController:
         course = self.findCourseByCode(courseCode)
         if course == None: 
             return "no course with given id!"
-        else: 
-            student.courses.append(course)
-            return "you picked course successfully!"
+        else:
+            if student.hasCourse(course):
+                return "you already have this course!"
+            else:
+                student.courses.append(course)
+                return "you picked course successfully!"
 
     def showAllCourses(self):
         result = f"courses count: {len(self.allCourses)} \n"

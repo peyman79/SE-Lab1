@@ -15,3 +15,9 @@ class Student:
             result += str(course)
             result += "\n==================\n"
         return result
+    
+    def hasCourse(self, course):
+        for c in self.courses:
+            if c.code == course.code: 
+                return True 
+        return False

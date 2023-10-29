@@ -5,6 +5,7 @@ class StudentMenu:
 
     def run(self):
 
+        # TODO : show one prof courses 
         print(f"Welcome {self.authenticator.currentUser.name}")
         while True:
             command = input(
