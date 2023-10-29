@@ -41,6 +41,13 @@ class CourseController:
     def showAllCourses(self):
         return CourseController.showCourses(self.allCourses)
     
+    def showAvailableCourses(self, student):
+        availableCourses = []
+        for course in self.allCourses:
+            if course.hasCapacity() and course not in student.courses:
+                availableCourses.append(course)
+        return CourseController.showCourses(availableCourses)
+    
     def findCourseByCode(self, courseCode):
         for course in self.allCourses: 
             if course.code == courseCode:
