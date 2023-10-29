@@ -9,13 +9,17 @@ class StudentMenu:
         print(f"Welcome {self.authenticator.currentUser.name}")
         while True:
             command = input(
-                "Enter a command:\n1.show my info\n2.logout\n3.pick course\n4.my courses\n5.all courses\n6.show prof courses \n")
+                "Enter a command:\n1.show my info\n2.logout\n3.pick course\n4.my courses\n5.all courses\n6.show prof courses\n7.drop course \n")
             if command == "show my info":
                 response = self.authenticator.showUserInfo()
                 print(response)
             elif command == "pick course":
                 courseCode = input("course code: ")
                 response = self.courseController.pickCourse(courseCode, self.authenticator.currentUser)
+                print(response)
+            elif command == "drop course":
+                courseCode = input("course code: ")
+                response = self.courseController.dropCourse(courseCode, self.authenticator.currentUser)
                 print(response)
             elif command == "my courses":
                 student = self.authenticator.currentUser

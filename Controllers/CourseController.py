@@ -26,6 +26,17 @@ class CourseController:
                     return "you picked course successfully!"
                 else: 
                     return "this course capacity is full!"
+    def dropCourse(self, courseCode, student):
+        course = self.findCourseByCode(courseCode)
+        if course == None: 
+            return "no course with given id!"
+        else:
+            if student.hasCourse(course):
+                student.courses.remove(course)
+                course.picked -= 1
+                return "course dropped successfully!"
+            else:
+                return "you don't have this course!"
 
     def showAllCourses(self):
         return CourseController.showCourses(self.allCourses)
