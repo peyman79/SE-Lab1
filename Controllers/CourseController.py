@@ -60,6 +60,11 @@ class CourseController:
                 profCourses.append(course)
         return CourseController.showCourses(profCourses)
 
+    def showCourse(self, code):
+        for course in self.allCourses:
+            if course.code == code:
+                return str(course)
+
     def showCourses(courses):
         result = f"courses count: {len(courses)} \n"
         result += "\n==================\n"
