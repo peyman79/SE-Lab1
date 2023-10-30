@@ -15,6 +15,24 @@
 ![Screenshot 2023-10-28 115557](https://github.com/peyman79/SE-Lab1/assets/61017890/5f8ed96c-a7b7-4a52-b1fb-1f363547c135)
 ![Screenshot 2023-10-28 115615](https://github.com/peyman79/SE-Lab1/assets/61017890/f7968963-06c8-44e8-b330-3fe9eda3cc6d)
 
+
+در ادامه کار در هنگام مرج کردن برنچ ها، به سه کانفیلکت در دو تا از فایل ها برخوردیم. 
+![Screenshot 2023-10-30 111353](https://github.com/peyman79/SE-Lab1/assets/61017890/7f69508b-91a4-4a99-a1cb-a942197f943d)
+سه کانفیلکت و resolve شده آنها را در تصاویر زیر می توانید مشاهده کنید:
+![Screenshot 2023-10-30 111420](https://github.com/peyman79/SE-Lab1/assets/61017890/a37dabab-b4e2-4e1b-9145-a19957fc9820)
+
+![Screenshot 2023-10-30 111737](https://github.com/peyman79/SE-Lab1/assets/61017890/e1478128-fbf5-47ce-b262-fd0235601874)
+
+![Screenshot 2023-10-30 111605](https://github.com/peyman79/SE-Lab1/assets/61017890/d6b66ba2-4a49-46cd-a17c-9d22967203fb)
+![Screenshot 2023-10-30 111831](https://github.com/peyman79/SE-Lab1/assets/61017890/ee8b0cfb-21ae-4fe9-85f4-4a2b9353138c)
+![Screenshot 2023-10-30 114510](https://github.com/peyman79/SE-Lab1/assets/61017890/295f6bb9-9a89-4087-b8be-9089267df6a9)
+
+
+حال دکمه commit merge را می زنیم تا تغییرات انجام شده به صورت یک کامیت برای مرج، ثبت شود:
+![Screenshot 2023-10-30 111859](https://github.com/peyman79/SE-Lab1/assets/61017890/23002124-056d-40b0-b9e0-d737b1633452)
+حال دکمه مرج برای pull request فعال شده و میتوان آن را مرج کرد:
+![Screenshot 2023-10-30 111925](https://github.com/peyman79/SE-Lab1/assets/61017890/5ed9409c-08a3-41f4-bc28-2838225515d4)
+
 در ادامه ی روند پروژه با تکرار روند بالا فیچر های جدیدی از قبیل ساختن درس، برداشتن و حذف کردن واحد و ... به نرم افزار خود اضافه میکنیم و آن را در برنچ develop مرج می کنیم. 
 ![Screenshot from 2023-10-29 14-33-48](https://github.com/peyman79/SE-Lab1/assets/62210297/bf0cc274-1597-46bc-8bd4-f8b5cc30e0e3)
 سپس برای آپدیت شدن گزارش در کنار کد، برنچ گزارش را در برنچ develop مرج میکنیم. سپس برای نوشتن ادامه ی گزارش و برای این که در کنار کد باشد برنچ develop را نیز در برنچ گزارش مرج میکنیم. 
