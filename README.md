@@ -25,6 +25,7 @@
 
 ![Screenshot 2023-10-30 111605](https://github.com/peyman79/SE-Lab1/assets/61017890/d6b66ba2-4a49-46cd-a17c-9d22967203fb)
 ![Screenshot 2023-10-30 111831](https://github.com/peyman79/SE-Lab1/assets/61017890/ee8b0cfb-21ae-4fe9-85f4-4a2b9353138c)
+![Screenshot 2023-10-30 114510](https://github.com/peyman79/SE-Lab1/assets/61017890/295f6bb9-9a89-4087-b8be-9089267df6a9)
 
 
 حال دکمه commit merge را می زنیم تا تغییرات انجام شده به صورت یک کامیت برای مرج، ثبت شود:
