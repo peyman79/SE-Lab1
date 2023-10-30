@@ -69,6 +69,11 @@ class CourseController:
             return "course time edited successfulley!"
 
 
+    def showCourse(self, code):
+        for course in self.allCourses:
+            if course.code == code:
+                return str(course)
+
     def showCourses(courses):
         result = f"courses count: {len(courses)} \n"
         result += "\n==================\n"
