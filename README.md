@@ -15,6 +15,19 @@
 ![Screenshot 2023-10-28 115557](https://github.com/peyman79/SE-Lab1/assets/61017890/5f8ed96c-a7b7-4a52-b1fb-1f363547c135)
 ![Screenshot 2023-10-28 115615](https://github.com/peyman79/SE-Lab1/assets/61017890/f7968963-06c8-44e8-b330-3fe9eda3cc6d)
 
+در ادامه کار در هنگام مرج کردن برنچ ها، به دو کانفیلکت در یکی از فایل ها برخوردیم. 
+![Screenshot 2023-10-30 111353](https://github.com/peyman79/SE-Lab1/assets/61017890/7f69508b-91a4-4a99-a1cb-a942197f943d)
+دو کانفیلکت و resolve شده آنها را در دو تصویر زیر می توانید مشاهده کنید:
+![Screenshot 2023-10-30 111420](https://github.com/peyman79/SE-Lab1/assets/61017890/a37dabab-b4e2-4e1b-9145-a19957fc9820)
+
+![Screenshot 2023-10-30 111737](https://github.com/peyman79/SE-Lab1/assets/61017890/e1478128-fbf5-47ce-b262-fd0235601874)
+
+![Screenshot 2023-10-30 111605](https://github.com/peyman79/SE-Lab1/assets/61017890/d6b66ba2-4a49-46cd-a17c-9d22967203fb)
+
+حال دکمه commit merge را می زنیم تا تغییرات انجام شده به صورت یک کامیت برای مرج، ثبت شود:
+![Screenshot 2023-10-30 111859](https://github.com/peyman79/SE-Lab1/assets/61017890/23002124-056d-40b0-b9e0-d737b1633452)
+حال دکمه مرج برای pull request فعال شده و میتوان آن را مرج کرد:
+![Screenshot 2023-10-30 111925](https://github.com/peyman79/SE-Lab1/assets/61017890/5ed9409c-08a3-41f4-bc28-2838225515d4)
 
 ## پرسش ها
 1. پوشه git یک پوشه hidden بوده که حاوی اطلاعاتی از جمله تاریخچه کامیت ها، برنچ ها، کانفیگ ها (مانند اطلاعات ایمیل و اکانت متصل به مخزن گیت) و... می باشد. این پوشه با دستور git init در ترمینال git bash ساخته می شود.
