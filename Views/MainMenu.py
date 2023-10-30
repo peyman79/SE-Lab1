@@ -13,7 +13,7 @@ class MainMenu:
         while True:
             command = input(
                 "Enter a command:\n1.register student\n2.register professor\n3.login student\n4.login "
-                "professor\n")
+                "professor\n5.exit\n")
             if command == "register student":
                 id = input("id: ")
                 name = input("name: ")
